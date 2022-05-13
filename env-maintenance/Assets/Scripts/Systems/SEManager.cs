@@ -20,6 +20,7 @@ namespace NsUnityVr.Systems
         putting_S,
         sheets,
         knock,
+        shodoku,
     }
 
     public class SEManager : SingletonMonoBehaviour<SEManager>
@@ -35,6 +36,7 @@ namespace NsUnityVr.Systems
         [SerializeField] AudioClip _putting_S = null;
         [SerializeField] AudioClip _sheets = null;
         [SerializeField] AudioClip _knock = null;
+        [SerializeField] AudioClip _shodoku = null;
 
         AudioSource _as;
         Dictionary<SE, AudioClip> _seDictionary;
@@ -58,6 +60,7 @@ namespace NsUnityVr.Systems
                 {SE.putting_S, _putting_S},
                 {SE.sheets, _sheets},
                 {SE.knock, _knock},
+                {SE.shodoku, _shodoku},
             };
         }
 

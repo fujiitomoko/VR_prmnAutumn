@@ -37,7 +37,7 @@ public class MaintainedWithoutGrabbing : MonoBehaviour
 
     protected virtual void MaintenanceAction()
     {
-        SEManager.Instance.PlaySE(SE.kira);
+        //SEManager.Instance.PlaySE(SE.kira);
         var effect_pre = Resources.Load<GameObject>("Prefabs/Effect");
         var effect = Instantiate<GameObject>(effect_pre, transform.position, Quaternion.identity);
         // effect.transform.SetParent(transform);

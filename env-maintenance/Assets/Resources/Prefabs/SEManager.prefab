@@ -151,3 +151,4 @@ MonoBehaviour:
   _putting_S: {fileID: 8300000, guid: dff26a8442ac574468a139426c31bbeb, type: 3}
   _sheets: {fileID: 8300000, guid: 569dac2698d4af642a7b15251e5df596, type: 3}
   _knock: {fileID: 8300000, guid: 8909a2623338de645929929aae154cf1, type: 3}
+  _shodoku: {fileID: 8300000, guid: 72a8b8e297f8d5b408a39ee14d6bb0c1, type: 3}
