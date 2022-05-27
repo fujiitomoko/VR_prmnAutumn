@@ -11,7 +11,9 @@ using NsUnityVr.Systems;
 public class MaintainedObjects : MonoBehaviour
 {
     /// <summary>初期位置</summary>
+    ///
     [SerializeField] Vector3 _startPosition = default;
+
 
     /// <summary>初期回転</summary>
     [SerializeField] Vector3 _startRotation = default;
@@ -46,6 +48,7 @@ public class MaintainedObjects : MonoBehaviour
 
     void Start()
     {
+
         // 正しい位置が未入力のとき、現在位置を正しい位置とする
         if(_correctPosition == Vector3.zero && _correctRotation == Vector3.zero)
         {
