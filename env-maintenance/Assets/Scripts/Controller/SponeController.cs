@@ -17,6 +17,15 @@ public class SponeController : MonoBehaviour
 
     void Start()
     {
+        RandomSpone();
+    }
+
+    void Update()
+    {
+
+    }
+
+    void RandomSpone(){
         f = Random.Range(1,3);
         Debug.Log(f);
 
@@ -41,10 +50,5 @@ public class SponeController : MonoBehaviour
                 sponeObject.transform.position =new Vector3(x2,0,z2);
                 break;
         }
-    }
-
-    void Update()
-    {
-
     }
 }

@@ -2,6 +2,8 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
+    <CscToolPath>C:\Program Files\Unity\Hub\Editor\2019.4.10f1\Editor\Data\Tools\RoslynScripts</CscToolPath>
+    <CscToolExe>unity_csc.bat</CscToolExe>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -44,6 +46,14 @@
     <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2019.4.10f1\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2019.4.10f1\Editor\Data\Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\VRM\Runtime\BlendShape\BlendShapeAvatar.cs" />
      <Compile Include="Assets\VRM\Runtime\BlendShape\BlendShapeBindingMerger.cs" />
@@ -111,12 +121,6 @@
      <Compile Include="Assets\VRM\Runtime\SpringBone\VRMSpringBoneColliderGroup.cs" />
      <Compile Include="Assets\VRM\Runtime\SpringBone\VRMSpringUtility.cs" />
      <None Include="Assets\VRM\Runtime\VRM.asmdef" />
- <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/UnityLab/VR_prmnAutumn/env-maintenance/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/UnityLab/VR_prmnAutumn/env-maintenance/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -309,26 +313,23 @@
  <Reference Include="UnityEditor.WindowsStandalone.Extensions">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
- <Reference Include="UnityEditor.Android.Extensions">
- <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
- </Reference>
  <Reference Include="DOTween">
- <HintPath>C:/Users/UnityLab/VR_prmnAutumn/env-maintenance/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
+ <HintPath>C:/Users/PCUser/VR_prmnAutumn/env-maintenance/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
  </Reference>
  <Reference Include="DOTweenEditor">
- <HintPath>C:/Users/UnityLab/VR_prmnAutumn/env-maintenance/Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
+ <HintPath>C:/Users/PCUser/VR_prmnAutumn/env-maintenance/Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
  </Reference>
  <Reference Include="Microsoft.CognitiveServices.Speech.csharp">
- <HintPath>C:/Users/UnityLab/VR_prmnAutumn/env-maintenance/Assets/SpeechSDK/Plugins/x86_64/Microsoft.CognitiveServices.Speech.csharp.dll</HintPath>
+ <HintPath>C:/Users/PCUser/VR_prmnAutumn/env-maintenance/Assets/SpeechSDK/Plugins/x86_64/Microsoft.CognitiveServices.Speech.csharp.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Editor">
- <HintPath>C:/Users/UnityLab/VR_prmnAutumn/env-maintenance/Library/PackageCache/com.unity.analytics@3.3.5/Unity.Analytics.Editor.dll</HintPath>
+ <HintPath>C:/Users/PCUser/VR_prmnAutumn/env-maintenance/Library/PackageCache/com.unity.analytics@3.3.5/Unity.Analytics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Tracker">
- <HintPath>C:/Users/UnityLab/VR_prmnAutumn/env-maintenance/Library/PackageCache/com.unity.analytics@3.3.5/Unity.Analytics.Tracker.dll</HintPath>
+ <HintPath>C:/Users/PCUser/VR_prmnAutumn/env-maintenance/Library/PackageCache/com.unity.analytics@3.3.5/Unity.Analytics.Tracker.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.StandardEvents">
- <HintPath>C:/Users/UnityLab/VR_prmnAutumn/env-maintenance/Library/PackageCache/com.unity.analytics@3.3.5/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
+ <HintPath>C:/Users/PCUser/VR_prmnAutumn/env-maintenance/Library/PackageCache/com.unity.analytics@3.3.5/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.10f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -684,35 +685,41 @@
  <Reference Include="Boo.Lang">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>C:/Users/PCUser/VR_prmnAutumn/env-maintenance/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Users/PCUser/VR_prmnAutumn/env-maintenance/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="UniHumanoid.csproj">
-      <Project>{8397BA4F-4689-9FE9-3D07-F3BEB76630D6}</Project>
+      <Project>{837C302B-BEFB-922D-1DA1-A8B06C61082A}</Project>
       <Name>UniHumanoid</Name>
     </ProjectReference>
     <ProjectReference Include="UniGLTF.csproj">
-      <Project>{303C3321-F1DB-6F44-D322-4DC8C35FB248}</Project>
+      <Project>{0A8B8EC4-DE72-88DC-8A92-852DD2EAFE32}</Project>
       <Name>UniGLTF</Name>
     </ProjectReference>
     <ProjectReference Include="VRMShaders.GLTF.IO.Runtime.csproj">
-      <Project>{904C8DC9-1DE4-944F-0A3A-07E4BA65B860}</Project>
+      <Project>{87712202-8B27-E9BC-2636-80587DE707C0}</Project>
       <Name>VRMShaders.GLTF.IO.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="VRMShaders.VRM.IO.Runtime.csproj">
-      <Project>{115FFAE9-7750-4BAA-1798-3BE28D042F43}</Project>
+      <Project>{8DEEB06B-450E-381C-F568-232A8ACA3017}</Project>
       <Name>VRMShaders.VRM.IO.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="MToon.csproj">
-      <Project>{C2A46AA6-5517-211C-E06E-0319CBC8607D}</Project>
+      <Project>{FBBC4313-0FAD-DFB9-0748-B9B0E464111C}</Project>
       <Name>MToon</Name>
     </ProjectReference>
     <ProjectReference Include="FastSpringBone.csproj">
-      <Project>{82AA5F70-BAF6-CA71-876B-7F3D0F2CD818}</Project>
+      <Project>{65C82EEF-3FD0-2FAD-9A57-CE4B8BA91A2B}</Project>
       <Name>FastSpringBone</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>
