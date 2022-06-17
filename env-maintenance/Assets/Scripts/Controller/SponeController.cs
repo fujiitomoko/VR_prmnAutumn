@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -17,7 +17,7 @@ public class SponeController : MonoBehaviour
 
     void Start()
     {
-        RandomSpone();
+        RandomCreate();
     }
 
     void Update()
@@ -25,9 +25,8 @@ public class SponeController : MonoBehaviour
 
     }
 
-    void RandomSpone(){
+    public void RandomCreate(){
         f = Random.Range(1,3);
-        Debug.Log(f);
 
         switch(f){
             case 1:
@@ -37,7 +36,10 @@ public class SponeController : MonoBehaviour
                 v1 = col1.size;
                 float x1 = Random.Range(pos1.x-v1.x/2,pos1.x+v1.x/2);
                 float z1 = Random.Range(pos1.z-v1.z/2,pos1.z+v1.z/2);
-                sponeObject.transform.position =new Vector3(x1,0,z1);
+                if(sponeObject.tag == "Petbottle"){
+                    sponeObject.transform.Rotate(new Vector3(0,50,0));
+                }
+                sponeObject.transform.position = new Vector3(x1,0,z1);
                 break;
 
             case 2:
@@ -47,8 +49,12 @@ public class SponeController : MonoBehaviour
                 v2 = col2.size;
                 float x2 = Random.Range(pos2.x-v2.x/2,pos2.x+v2.x/2);
                 float z2 = Random.Range(pos2.z-v2.z/2,pos2.z+v2.z/2);
+                if(sponeObject.tag == "Petbottle"){
+                    sponeObject.transform.Rotate(new Vector3(0,50,0));
+                }
                 sponeObject.transform.position =new Vector3(x2,0,z2);
                 break;
+
         }
     }
 }

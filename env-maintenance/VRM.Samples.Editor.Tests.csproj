@@ -2,8 +2,6 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
-    <CscToolPath>C:\Program Files\Unity\Hub\Editor\2019.4.10f1\Editor\Data\Tools\RoslynScripts</CscToolPath>
-    <CscToolExe>unity_csc.bat</CscToolExe>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -47,17 +45,21 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="UnityEngine">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2019.4.10f1\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2019.4.10f1\Editor\Data\Managed/UnityEditor.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
      <Compile Include="Assets\VRM\Tests\SampleTests\VRMImportExportTests.cs" />
      <Compile Include="Assets\VRM\Tests\SampleTests\VRMMaterialTests.cs" />
      <None Include="Assets\VRM\Tests\SampleTests\VRM.Samples.Editor.Tests.asmdef" />
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>C:/Users/UnityLab/VR_prmnAutumn/env-maintenance/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.TestRunner">
+ <HintPath>C:/Users/UnityLab/VR_prmnAutumn/env-maintenance/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>C:/Users/UnityLab/VR_prmnAutumn/env-maintenance/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Users/UnityLab/VR_prmnAutumn/env-maintenance/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -250,8 +252,11 @@
  <Reference Include="UnityEditor.WindowsStandalone.Extensions">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEditor.Android.Extensions">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+ </Reference>
  <Reference Include="nunit.framework">
- <HintPath>C:/Users/PCUser/VR_prmnAutumn/env-maintenance/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+ <HintPath>C:/Users/UnityLab/VR_prmnAutumn/env-maintenance/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.10f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -607,47 +612,35 @@
  <Reference Include="Boo.Lang">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
  </Reference>
- <Reference Include="UnityEngine.TestRunner">
- <HintPath>C:/Users/PCUser/VR_prmnAutumn/env-maintenance/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.TestRunner">
- <HintPath>C:/Users/PCUser/VR_prmnAutumn/env-maintenance/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/PCUser/VR_prmnAutumn/env-maintenance/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/PCUser/VR_prmnAutumn/env-maintenance/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
- </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="VRM.csproj">
-      <Project>{85B33D7F-C661-7661-320F-E2ECA65F3454}</Project>
+      <Project>{01C91750-A28D-A2EB-03A3-33C8CE0C5E04}</Project>
       <Name>VRM</Name>
     </ProjectReference>
     <ProjectReference Include="UniGLTF.csproj">
-      <Project>{0A8B8EC4-DE72-88DC-8A92-852DD2EAFE32}</Project>
+      <Project>{303C3321-F1DB-6F44-D322-4DC8C35FB248}</Project>
       <Name>UniGLTF</Name>
     </ProjectReference>
     <ProjectReference Include="UniVRM.Editor.csproj">
-      <Project>{E4D48457-6450-EA01-5E1F-04FEECFCF3B7}</Project>
+      <Project>{DFA8E470-9672-C931-128F-1043E6DFCC9A}</Project>
       <Name>UniVRM.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="VRM.Tests.csproj">
-      <Project>{91279FF5-64A1-8703-E92D-1A29EC85AEB5}</Project>
+      <Project>{9D225C8A-ED31-595C-6282-517374997267}</Project>
       <Name>VRM.Tests</Name>
     </ProjectReference>
     <ProjectReference Include="VRMShaders.GLTF.IO.Runtime.csproj">
-      <Project>{87712202-8B27-E9BC-2636-80587DE707C0}</Project>
+      <Project>{904C8DC9-1DE4-944F-0A3A-07E4BA65B860}</Project>
       <Name>VRMShaders.GLTF.IO.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="VRMShaders.GLTF.IO.Editor.csproj">
-      <Project>{71C6EC65-15A2-D28C-AE87-B1801EE427F6}</Project>
+      <Project>{72124B69-1338-309A-530A-15EE8F44C797}</Project>
       <Name>VRMShaders.GLTF.IO.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>
