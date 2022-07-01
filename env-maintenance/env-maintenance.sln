@@ -71,6 +71,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MToon.Editor", "MToon.Edito
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniHumanoid.Editor.Tests", "UniHumanoid.Editor.Tests.csproj", "{785FB003-145F-BA3C-D821-B44D0A4A684A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lilToon.Editor", "lilToon.Editor.csproj", "{D31CAE30-903C-D640-1DEA-AB4AA8D02FD4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -217,6 +219,10 @@ Global
 		{785FB003-145F-BA3C-D821-B44D0A4A684A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{785FB003-145F-BA3C-D821-B44D0A4A684A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{785FB003-145F-BA3C-D821-B44D0A4A684A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D31CAE30-903C-D640-1DEA-AB4AA8D02FD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D31CAE30-903C-D640-1DEA-AB4AA8D02FD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D31CAE30-903C-D640-1DEA-AB4AA8D02FD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D31CAE30-903C-D640-1DEA-AB4AA8D02FD4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
