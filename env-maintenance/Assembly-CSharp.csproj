@@ -247,6 +247,7 @@
      <Compile Include="Assets\Scripts\Utility\ButtonAnimation.cs" />
      <Compile Include="Assets\Scripts\Utility\ChangeAnimatorPrm.cs" />
      <Compile Include="Assets\Scripts\Utility\FollowHUD.cs" />
+     <Compile Include="Assets\Scripts\Utility\GloveChange.cs" />
      <Compile Include="Assets\Scripts\Utility\SingletonMonobehaviour.cs" />
      <Compile Include="Assets\Scripts\Utility\UIUserGuide.cs" />
      <Compile Include="Assets\Scripts\Utility\UserGuide.cs" />
