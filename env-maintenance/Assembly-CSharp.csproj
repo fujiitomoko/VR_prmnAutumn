@@ -209,6 +209,7 @@
      <Compile Include="Assets\Scripts\Debugs\DebugUI.cs" />
      <Compile Include="Assets\Scripts\Events\DoorEvent.cs" />
      <Compile Include="Assets\Scripts\Events\PatientEvent.cs" />
+     <Compile Include="Assets\Scripts\Events\Wipe.cs" />
      <Compile Include="Assets\Scripts\Practices\PracticeFF.cs" />
      <Compile Include="Assets\Scripts\Practices\PracticeHY.cs" />
      <Compile Include="Assets\Scripts\Practices\PracticeYS.cs" />
