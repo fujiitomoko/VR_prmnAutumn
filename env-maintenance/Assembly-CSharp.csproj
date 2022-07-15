@@ -204,6 +204,7 @@
      <Compile Include="Assets\Scripts\Controller\MenuManager.cs" />
      <Compile Include="Assets\Scripts\Controller\OVRGrabberCustom.cs" />
      <Compile Include="Assets\Scripts\Controller\SponeController.cs" />
+     <Compile Include="Assets\Scripts\Controller\ZoukinController.cs" />
      <Compile Include="Assets\Scripts\Debugs\DebugLoadScene.cs" />
      <Compile Include="Assets\Scripts\Debugs\DebugSlidingDoor.cs" />
      <Compile Include="Assets\Scripts\Debugs\DebugUI.cs" />

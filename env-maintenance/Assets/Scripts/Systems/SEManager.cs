@@ -21,6 +21,7 @@ namespace NsUnityVr.Systems
         sheets,
         knock,
         shodoku,
+        zoukin,
     }
 
     public class SEManager : SingletonMonoBehaviour<SEManager>
@@ -37,6 +38,7 @@ namespace NsUnityVr.Systems
         [SerializeField] AudioClip _sheets = null;
         [SerializeField] AudioClip _knock = null;
         [SerializeField] AudioClip _shodoku = null;
+        [SerializeField] AudioClip _zoukin = null;
 
         AudioSource _as;
         Dictionary<SE, AudioClip> _seDictionary;
@@ -61,6 +63,7 @@ namespace NsUnityVr.Systems
                 {SE.sheets, _sheets},
                 {SE.knock, _knock},
                 {SE.shodoku, _shodoku},
+                {SE.zoukin, _zoukin}
             };
         }
 

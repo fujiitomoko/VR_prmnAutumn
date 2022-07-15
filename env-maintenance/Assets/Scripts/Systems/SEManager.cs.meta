@@ -16,6 +16,7 @@ MonoImporter:
   - _sheets: {instanceID: 0}
   - _knock: {instanceID: 0}
   - _shodoku: {fileID: 8300000, guid: 72a8b8e297f8d5b408a39ee14d6bb0c1, type: 3}
+  - _zoukin: {fileID: 8300000, guid: 7349dd38b8397f846882f252abc7dc12, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

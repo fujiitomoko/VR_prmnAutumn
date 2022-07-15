@@ -114,10 +114,10 @@ MonoBehaviour:
     y: 30
     width: 1280
     height: 588
-  m_MinSize: {x: 911, y: 421}
-  m_MaxSize: {x: 22006, y: 10021}
+  m_MinSize: {x: 908, y: 421}
+  m_MaxSize: {x: 22003, y: 10021}
   vertical: 0
-  controlID: 10961
+  controlID: 9306
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_MinSize: {x: 201, y: 421}
   m_MaxSize: {x: 4001, y: 8021}
   vertical: 1
-  controlID: 10876
+  controlID: 9344
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -402,9 +402,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 5.3709087, y: -2.492464, z: -3.3193314}
+    m_Target: {x: 0.88721323, y: 0.013307571, z: 5.3483367}
     speed: 2
-    m_Value: {x: 0.024192214, y: 0.3181064, z: -0.25208735}
+    m_Value: {x: 0.88721323, y: 0.013307571, z: 5.3483367}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -450,13 +450,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.28010336, y: 0.6428862, z: -0.27362916, w: 0.6584163}
+    m_Target: {x: -0.08429182, y: 0.8782724, z: -0.16826464, w: -0.43974185}
     speed: 2
-    m_Value: {x: 0.0018798475, y: 0.9976637, z: -0.0302474, w: 0.061228316}
+    m_Value: {x: -0.08428536, y: 0.8782051, z: -0.16825175, w: -0.43970814}
   m_Size:
-    m_Target: 2.3660254
+    m_Target: 1.7376461
     speed: 2
-    m_Value: 10
+    m_Value: 1.7376461
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -535,10 +535,10 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 817.9355}
-      m_SelectedIDs: 06330000
-      m_LastClickedID: 0
-      m_ExpandedIDs: 6084ffffd0ecffff6cf1ffff9ef2ffff88f3ffff96f3ffff48f5ffff86f5ffff82f6ffff8af9ffff56fbffffd25b0000ec5b0000085c0000ee5c00005e5d0000b65d0000d65f0000
+      scrollPos: {x: 0, y: 720}
+      m_SelectedIDs: f05b0000
+      m_LastClickedID: 23536
+      m_ExpandedIDs: d0ecffff88f3ffff48f5ffff86f5ffff82f6ffff56fbffffd65b0000f05b0000285c00007c5c0000f25c0000d65d0000fa5f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -589,7 +589,7 @@ MonoBehaviour:
     height: 567
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
-    m_NameFilter: shodoku
+    m_NameFilter: 
     m_ClassNames: []
     m_AssetLabels: []
     m_AssetBundleNames: []
@@ -601,20 +601,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scripts/Utility
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scripts/Utility
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\UnityLab\VR_prmnAutumn\env-maintenance
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: 000000005a7400005c7400005e740000627400006474000066740000687400006a7400006c74000070740000
+    m_SelectedIDs: d6740000
+    m_LastClickedID: 29910
+    m_ExpandedIDs: 0000000086740000887400008a7400008c7400008e7400009074000092740000947400009674000098740000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -642,7 +642,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000005a7400005c7400005e740000627400006474000066740000687400006a7400006c74000070740000
+    m_ExpandedIDs: 0000000086740000887400008a7400008c7400008e7400009074000092740000947400009674000098740000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -669,7 +669,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -694,7 +694,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 338}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 110
